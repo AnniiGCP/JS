@@ -1,0 +1,50 @@
+4 a) Develop a JavaScript program to display (on respective button clicks)
+multiplication and division of two numbers. Read values from the textboxes
+and design two buttons (use DOM)
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+</head>
+<style>
+body { background-color:pink;}
+p { color:blue;
+}
+h2{ color:red;}
+h1{color:brown;}
+.btn
+{
+background-color:#ff123f;
+color:whitesmoke;
+font-size:25;
+width:10%;
+height:40px;
+}
+</style>
+<body style="margin: 30px">
+<h1 style="color:green">DOCUMENT OBJECT MODEL (DOM)</h1>
+<h2 >Multiplication and Division using Javascript</h2>
+<form>
+<b>ENTER 1st NUMBER :</b> <input type="text" id="firstNumber" /><br>
+<b>ENTER 2nd NUMBER: </b> <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="MULTIPLY" class="btn"/>
+<input type="button" onClick="divide()" Value="DIVIDE" class="btn" /><br>
+</form>
+<h2><p>The Result is :</h2>
+<h1><span id="result"></span></h1>
+</p>
+<script>
+function multiplyBy() {
+num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 * num2;
+}
+function divide() {
+ num1 = document.getElementById("firstNumber").value;
+ num2 = document.getElementById("secondNumber").value;
+ document.getElementById("result").innerHTML = num1 / num2;
+ }
+</script>
+</body>
+</html>
