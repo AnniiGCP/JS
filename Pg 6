@@ -1,0 +1,57 @@
+6(a) Develop a javascript program to sort a list of numbers (use array and
+function)
+
+<html>
+<body>
+<script>
+var arr = [2,4,1,8,5];
+var result= arr.sort (function compare (a,b){
+return b-a; });
+document.write ("Descending order");
+document.write ("<br/>");
+document.write (result);
+document.write ("<br>");
+</script>
+<script >
+var arr = [10,5,1,9,3];
+var result= arr.sort (function compare (a,b){
+return a-b; });
+document.write("Ascending order”);
+document.write ("<br/>");
+document.write (result);
+document.write ("<br>");
+</script>
+</body>
+</html>
+
+
+6(b). Develop a JavaScript program to create a hotel object using object
+literal syntax having properties (name, location, room rate, discount etc),
+constructors and method (offer-price). Create few objects to demonstrate the
+access of properties and an associated method.
+
+<html>
+<body>
+<h1>JavaScript Object Literals & Constructors</h1>
+<script>
+const hotel=[{name:"John",location:"Bengaluru",rr:5500,discount:20},
+{ name:"James",location:"Goa",rr:6000,discount:20},
+{name:"Zaevika",location:"TamilNadu",rr:500,discount:5},
+{name:"Alok",location:"Telangana",rr:3500,discount:25}];
+function hot(P){
+this.name=P.name;
+this.location=P.location;
+this.rr=P.rr;
+this.discount=P.discount;
+}
+for (let i = 0; i < hotel.length; i++) {
+const v1=new hot(hotel[i]);
+var offerprice = hotel[i].rr-((hotel[i].discount/100)*hotel[i].rr);
+document.write("Name: "+v1.name+"<br>","Location: "+v1.location+"<br>","Room Rate: ₹
+"+v1.rr+"<br>","Discount: "+v1.discount+"%"+"<br>","OFFER PRICE: ₹
+"+offerprice+"<br>"+"<br>"+"<br>");
+}
+</script>
+</body>
+</html>
+O
