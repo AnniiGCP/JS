@@ -1,0 +1,32 @@
+4b) ) Develop a JavaScript program to highlight with red color the HTML
+links () having class name “high” (use DOM).
+
+<html>
+ <body>
+ <style>
+/* unvisited link */
+a:link {
+ color: red;
+}
+/* visited link */
+a:visited {
+ color: green;
+}
+/* mouse over link */
+a:hover {
+ color: hotpink;
+}
+/* selected link */
+a:active {
+ color: blue;
+}
+</style>
+<h2>Styling a link depending on state</h2>
+<p><b><a href="1a.html" target="_blank">This is a link</a></b></p>
+ <script>
+ const parentDOM = document.getElementById("parent-id");
+ const high = parentDOM.getElementsByClassName("high");
+ document.write(high);
+ </script>
+ </body>
+</html>
