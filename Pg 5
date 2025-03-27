@@ -1,0 +1,46 @@
+5a) Develop a JavaScript program to read the content of HTML paragraph
+and update (on button click event) with the suitable Text read from the
+HTML Textbox (Use innerHTML)
+
+<!DOCTYPE html>
+<html>
+<head>
+<h1 style="color:darkblue;">when u click a button it will change the Html paragraph and update the
+text from textbox.</h1>
+<p id="display"> Hi!!! WELCOME TO MALDIVES</p>
+<script language="JavaScript">
+function ShowMessage() {
+ var message = document.getElementById("text").value;
+ document.getElementById('display').innerHTML = "You entered: " + message;
+}
+</script>
+</head>
+<body>
+<form>
+Enter a Text: <input type="text" name="message" id="text">
+</form>
+<input type="submit" onclick="ShowMessage();"><br />
+</body>
+</html>
+
+
+5b) Develop a JavaScript program to check for an attribute (‘href’ in ) and
+get its value/display on the Web page on a button click.
+
+<html>
+<body>
+ <h3 id="center">Checking the href attribute on button click</h3>
+ <a href="https://www.google.com">Welcome to google Website</a>
+ <br><br>
+ <button onclick="sampleFunction()">
+ click here
+ </button>
+ <script>
+ function sampleFunction() {
+ var url = document.querySelector("a");
+ url.href = 'https://www.w3schools.com';
+ url.textContent = "Hello, Welcome to w3schools";
+ }
+ </script>
+</body>
+</html>
