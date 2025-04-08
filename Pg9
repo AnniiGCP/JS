@@ -1,0 +1,93 @@
+9a. Develop a jquery program to disable a link
+<html>
+<head>
+<script src="jquery-3.7.1.min.js"></script>
+<title>Disable a link using jQuery</title>
+</head><center>
+<h1 style="color:green;">WELCOME TO INDIA </h1>
+<body style="background-color: #FF474C;">
+<h2> <a href="https://www.google.com">google search engine
+</a></h2>
+<p></p>
+ <input id="button1" type="button" value="Click to disable the
+link!" style="color:blue;
+ font-size: 20px; font-weight: bold;"/>
+ </body></center>
+<script>
+$(document).ready(function(){
+ $('#button1').click(function(){
+ $("a").removeAttr('href');
+alert('link disabled');
+ });
+});
+</script>
+</html>
+
+9b. Develop a jquery program to delete all table rows except first
+one.
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="jquery-3.7.1.min.js"> </script>
+<style>
+table,
+th,
+td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+th,
+td {
+padding: 20px;
+}
+</style>
+<script>
+$(document).ready(function () {
+$('#btn').click(function () {
+$("#rTable").find("tr:gt(1)").remove();
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h1 style="color: green;">
+Welcome To KSIT
+</h1>
+<h2 style="color: purple;">
+Delete all table rows except first one using jQuery
+</h2>
+<table style="width:50%" id="rTable">
+<tr bgcolor="lightgreen">
+<th>First Name</th>
+<th>Last Name</th>
+<th>Age</th>
+</tr>
+<tr bgcolor="orange">
+<td>SATHYA</td>
+<td>SHEELA</td>
+<td>35</td>
+</tr>
+<tr bgcolor="yellow">
+<td>THIRISHANT</td>
+<td>CHINNU</td>
+<td>32</td>
+</tr>
+<tr bgcolor="pink">
+<td>SANJITHA</td>
+<td>DORAI</td>
+<td>28</td>
+</tr>
+<tr bgcolor="violet">
+<td>DEEKSHITA</td>
+<td>MADHU</td>
+<td>21</td>
+</tr>
+</table>
+<br><br>
+<button id="btn">
+<h1> Remove All Row Except First One </h1>
+</button>
+</center>
+</body>
+</html>
