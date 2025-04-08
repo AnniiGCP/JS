@@ -1,0 +1,66 @@
+11a). DEVELOP A JQUERY PROGRAM TO ADD TWO
+CLASSES
+<!DOCTYPE html>
+<html >
+<head>
+ <title>ADD MULTIPLE CLASS </title>
+ <style>
+ p {
+ margin: 8px;
+ font-size: 50px;
+ }
+ .selected {
+ color: red;
+ }
+ .highlight {
+ background: yellow;
+ }
+ </style>
+ <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<p>Hello</p>
+<p>and</p>
+<p>Goodbye</p>
+<script>
+$( "p" ).first().addClass( "selected highlight" );
+</script>
+</body>
+</html>
+
+
+11b) DEVELOP A JQUERY PROGRAM TO ADD A
+SPECIFIED CLASS
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.7.1.min.js">
+</script>
+<title>add specified Class</title>
+<style>
+p {
+margin: 8px;
+font-size: 35px;
+}
+.selected {
+display: block;
+border: 2px solid green;
+width: 160px;
+height: 60px;
+background-color: lightgreen;
+padding: 20px;
+}
+.highlight {
+background: yellow;
+}
+</style>
+</head>
+<body>
+<p>HI</p>
+<p>WELCOME TO</p>
+<p>CSD</p>
+<script>
+$("p").last().addClass("selected");
+</script>
+</body>
+</html>
