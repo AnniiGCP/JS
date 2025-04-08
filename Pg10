@@ -1,0 +1,73 @@
+10a. Develop a jquery program to change a css class.
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>JQuery Examples</title>
+<script src="jquery-3.7.1.min.js">
+</script>
+<style>
+.css_class {
+color: red;
+}
+</style>
+<script>
+$(() => {
+// Updating the .css_class font
+$("#button1").click(function () {
+$(".css_class").css("font-size", "24pt");
+});
+// Adding border property to the span selector
+$("#button2").click(function () {
+$("span").css("border", "1px solid green");
+});
+// Setting background color attribute in class
+#css_id)
+$("#button3").click(function () {
+$("#css_id").css("background", "yellow");
+});
+});
+</script>
+</head>
+<body>
+<input type="button" id="button1"
+value='button1'/>Updating the .css_class font<br>
+<input type="button"
+id="button2"
+value='button2' />
+Adding border property to the span selector<br>
+<input type="button" id="button3" value='button3' />
+Setting background color attribute in class
+<br><br><br>
+<span class='css_class'>
+Hello this is CSD...
+</span>
+<br><h2>
+<span id='css_id'>Highly talented Faculties</span>
+</h2>
+</body>
+</html>
+
+10b. Develop a jquery program to set the background color
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("body").on({
+ mouseenter: function(){
+ $(this).css("background-color", "violet");
+ },
+ mouseleave: function(){
+ $(this).css("background-color", "tomato");
+ },
+ });
+});
+</script>
+</head>
+<body>
+<center>
+<p>move the mouse pointer to change the background color.</p>
+</center>
+</body>
+</html>
