@@ -1,0 +1,70 @@
+12a) DEVELOP A JQUERY PROGRAM TO READ AND
+DISPLAY THE VALUE ENTERED IN TEXTBOX AND
+OPTION CHOSEN IN DROPDOWN LIST WITH RELEVANT
+EVENTS.
+<html>
+<head>
+<script src="jquery-3.7.1.min.js"></script>
+</head>
+<body style="background-color:skyblue;">
+Enter the Text:
+<input type="text" id="myText" placeholder="Enter your
+name">
+<select id="name" name="name">
+ <option value="">Please select...</option>
+ <option value="India">India</option>
+ <option value="US">Us</option>
+<option value="Canada">Canada</option>
+<option value="paris">paris</option>
+<option value="Iceland">Iceland</option>
+ <option value="China">China</option>
+</select>
+<div id="display"></div>
+<script>
+$(document).ready(function(){
+$("#myText").keyup(function(){
+var textValue=$(this).val();
+$("#display").text("Text:"+textValue);
+});
+$("#name").change(function(){
+var selectedOption=$(this).val();
+$("#display").append("<br>Selected Option:" +selectedOption);
+});
+});
+</script>
+</body>
+</html>
+
+12b) DEVELOP A JQUERY PROGRAM TO ANIMATE
+PARAGRAPH ELEMENT
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+How to click a button to animate
+the paragraph element using jQuery?
+</title>
+<script src="jquery-3.7.1.min.js">
+</script>
+<script>
+$(document).ready(function () {
+$("button").click(function () {
+$("#pa").animate({
+opacity: 0.5,
+fontSize: "3em",
+}, 1000);
+});
+});
+</script>
+</head>
+<body style="text-align: center;">
+<h1 style="color: blue;">
+WELCOME TO KSIT
+</h1>
+<p id="pa" style="color:pink;">
+WELCOME TO OUR COMPUTER SCIENCE AND
+DESIGN DEPARTMENT
+</p>
+<button>CLICK HERE!</button>
+</body>
+</html>
