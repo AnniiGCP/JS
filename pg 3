@@ -1,0 +1,72 @@
+<html>
+ <head>
+<style>
+body { background-color:lightgreen;}
+p {color:brown;}
+</style>
+
+<script type = "text/javascript">
+ function fun()
+{
+ alert ("WELCOME!!! This is KSIT, CSD Department");
+ }
+ </script>
+ </head>
+
+ <body style="text-align:center"> <h1>
+ <p> Click the following button to see the effect </p>
+</h1>
+ <form>
+<button onclick="fun()"><h2>CLICK ME</h2></button>
+ </form>
+ </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="text-align:center">
+<h1> Click the button to invoke the Confirm Message</h1>
+ <button onclick="myFunction()"><h2>CLICK HERE</h2></button>
+<h2><p id="conf" ></p> </h2>
+<script>
+function myFunction() {
+ if (window.confirm("Do you really want to delete?\n Deletion can not be reverted if you confirm!")) {
+ document.getElementById("conf").innerHTML = "you have successfully deleted the file"
+}
+}
+</script>
+<style>
+body { background-color:powderblue;}
+p {color:green;}
+h1{color:purple;}
+</style>
+</body>
+</html>
+
+
+<html>
+<h1> PROMPT MESSAGE </h1> <br> <br>
+<body style="text-align:center">
+<button onclick="fun()"> <h2>CLICK ME!</h2></button>
+<h2><p id="g"></p></h2>
+<script type = "text/javascript">
+function fun() {
+let string = prompt('Enter a string: ');
+if(string!=null)
+{
+document.getElementById("g").innerHTML="WELCOME TO "+string;
+}
+}
+</script>
+<style>
+body { background-color:pink;}
+p { color:blue;}
+h1{color:brown;}
+h2{color:green;}
+</style>
+</body>
+</html>
