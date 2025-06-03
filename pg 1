@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CAPITAL LETTERS</title>
+</head>
+<body>
+<script>
+const cap=function(sentence)
+{
+let str= sentence.split(" ");
+for(let i=0;i<str.length;i++)
+{
+str[i]=str[i][0].toUpperCase()+str[i].substring(1);
+}
+return str.join(" ");
+}
+document.write(cap("javascript and jquery interactive front end web
+development"));
+document.write("<br>");
+document.write(cap("i love my india"));
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function start(str)
+{
+document.write(str+"-->");
+if(str.length<4)
+{
+return false;
+}
+front=str.substring(0,4);
+if(front=='java')
+{
+return true;
+}
+else
+{
+return false;
+}
+}
+document.write(start("javascript"));
+document.write("<br>");
+document.write(start("java"));
+document.write("<br>");
+document.write(start("python"));
+document.write("<br>");
+document.write(start("c++"));
+</script>
+</body>
+</html>
